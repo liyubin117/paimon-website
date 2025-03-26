@@ -21,4 +21,4 @@ See https://github.com/apache/paimon/commits/release-0.8.2
 
 ## Documentation
 
-https://paimon.apache.org/docs/0.8/
+https://liyubin117.github.io/paimon-website/docs/0.8/

@@ -26,7 +26,7 @@ The first version of PyPaimon supports following features:
 3. Batch read: Filter and projection pushdown, and parallelly reading data as Apache Arrow, Pandas, DuckDB and Ray format.
 4. Batch write: Insert into or overwrite table with Apache Arrow and Pandas data.
 
-The detailed document can found at https://paimon.apache.org/docs/master/program-api/python-api/.
+The detailed document can found at https://liyubin117.github.io/paimon-website/docs/master/program-api/python-api/.
 
 ### Connect to Catalog
 
@@ -175,4 +175,4 @@ table_commit.close()
 ### Various data formats
 
 PyPaimon supports reading data in following formats: Pandas, Apache Arrow and DuckDB, and writing data in following
-formats: Pandas, Apache Arrow. Please refer to the [document](https://paimon.apache.org/docs/master/program-api/python-api/) for details.
+formats: Pandas, Apache Arrow. Please refer to the [document](https://liyubin117.github.io/paimon-website/docs/master/program-api/python-api/) for details.

@@ -18,7 +18,7 @@ name: "Build website and document"
 env:
   versions: ("master" "1.0") # defines what versions of document should be updated
   latest_version: "1.0" # defines what version docs/latest links to
-  base_href: "https://paimon.apache.org/" # website base href
+  base_href: "https://liyubin117.github.io/paimon-website/" # website base href
 
 on:
   workflow_dispatch:

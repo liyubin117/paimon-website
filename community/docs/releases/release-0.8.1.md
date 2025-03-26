@@ -33,4 +33,4 @@ The notable bugs include:
 
 ## Documentation
 
-https://paimon.apache.org/docs/0.8/
+https://liyubin117.github.io/paimon-website/docs/0.8/

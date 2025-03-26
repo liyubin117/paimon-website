@@ -27,4 +27,4 @@ Paimon offers the following core capabilities:
 
 Paimon 0.4 includes many bug fixes and improvements that make the system more stable and robust.
 
-Download the release [here](https://paimon.apache.org/docs/0.4/project/download/).
+Download the release [here](https://liyubin117.github.io/paimon-website/docs/0.4/project/download/).

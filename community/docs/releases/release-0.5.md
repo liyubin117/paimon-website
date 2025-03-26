@@ -9,7 +9,7 @@ weight: 50
 
 September 06, 2023 - Jingsong Lee (jingsonglee0@gmail.com)
 
-We are happy to announce the availability of Paimon [0.5.0-incubating](https://paimon.apache.org/docs/0.5/).
+We are happy to announce the availability of Paimon [0.5.0-incubating](https://liyubin117.github.io/paimon-website/docs/0.5/).
 
 Nearly 100 contributors have come to contribute release-0.5, we created 500+ commits together, bringing many exciting
 new features and improvements to the community. Thank you all for your joint efforts!
@@ -23,7 +23,7 @@ Highlight:
 
 ## CDC Ingestion
 
-Paimon supports a variety of ways to [ingest data into Paimon](https://paimon.apache.org/docs/0.5/how-to/cdc-ingestion/)
+Paimon supports a variety of ways to [ingest data into Paimon](https://liyubin117.github.io/paimon-website/docs/0.5/how-to/cdc-ingestion/)
 tables with schema evolution. In release 0.5, a large number of new features have been added:
 
 - MySQL Synchronizing Table
@@ -45,7 +45,7 @@ tables with schema evolution. In release 0.5, a large number of new features hav
 
 ## Primary Key Table
 
-By specific Primary Key in creating table DDL, you can get a [Primary Key Table](https://paimon.apache.org/docs/0.5/concepts/primary-key-table/),
+By specific Primary Key in creating table DDL, you can get a [Primary Key Table](https://liyubin117.github.io/paimon-website/docs/0.5/concepts/primary-key-table/),
 it accepts insert, update or delete records. 
 
 ### Dynamic Bucket
@@ -133,7 +133,7 @@ layers to be in Avro format.
 
 ### Append Only Scalable Table
 
-By defining `'bucket' = '-1'` to a non-pk table, you can assign an [Append Only Scalable Table](https://paimon.apache.org/docs/0.5/concepts/append-only-table/#append-for-scalable-table).
+By defining `'bucket' = '-1'` to a non-pk table, you can assign an [Append Only Scalable Table](https://liyubin117.github.io/paimon-website/docs/0.5/concepts/append-only-table/#append-for-scalable-table).
 In this mode, the table doesn't have the concept of bucket anymore, read and write are concurrent. We regard this table
 as a batch off-line table(although we can stream read and write still).
 
@@ -148,7 +148,7 @@ Paimon's snapshots can provide an easy way to query historical data. But in most
 snapshots and table will expire old snapshots according to table configuration. Snapshot expiration will also delete old
 data files, and the historical data of expired snapshots cannot be queried anymore.
 
-To solve this problem, you can create a [Tag](https://paimon.apache.org/docs/0.5/maintenance/manage-tags/) based on a
+To solve this problem, you can create a [Tag](https://liyubin117.github.io/paimon-website/docs/0.5/maintenance/manage-tags/) based on a
 snapshot. The tag will maintain the manifests and data files of the snapshot. A typical usage is creating tags daily,
 then you can maintain the historical data of each day for batch reading.
 
@@ -163,23 +163,23 @@ And you can query the incremental data of Tags (or snapshots) too, both Flink an
 After Flink released [1.17](https://flink.apache.org/2023/03/23/announcing-the-release-of-apache-flink-1.17/), Paimon
 underwent very in-depth integration.
 
-- [ALTER TABLE](https://paimon.apache.org/docs/0.5/how-to/altering-tables/) syntax is enhanced by including the
+- [ALTER TABLE](https://liyubin117.github.io/paimon-website/docs/0.5/how-to/altering-tables/) syntax is enhanced by including the
   ability to ADD/MODIFY/DROP columns, making it easier for users to maintain their table schema.
-- [FlinkGenericCatalog](https://paimon.apache.org/docs/0.5/engines/flink/#quick-start), you need to use Hive metastore. 
+- [FlinkGenericCatalog](https://liyubin117.github.io/paimon-website/docs/0.5/engines/flink/#quick-start), you need to use Hive metastore. 
   Then, you can use all the tables from Paimon, Hive, and Flink Generic Tables (Kafka and other tables)!
-- [Dynamic Partition Overwrite](https://paimon.apache.org/docs/0.5/how-to/writing-tables/#dynamic-overwrite) Flink’s
+- [Dynamic Partition Overwrite](https://liyubin117.github.io/paimon-website/docs/0.5/how-to/writing-tables/#dynamic-overwrite) Flink’s
   default overwrite mode is dynamic partition overwrite (that means Paimon only deletes the partitions appear in the
   overwritten data). You can configure dynamic-partition-overwrite to change it to static overwritten.
-- [Sync Partitions into Hive Metastore](https://paimon.apache.org/docs/0.5/how-to/creating-catalogs/#synchronizing-partitions-into-hive-metastore)
+- [Sync Partitions into Hive Metastore](https://liyubin117.github.io/paimon-website/docs/0.5/how-to/creating-catalogs/#synchronizing-partitions-into-hive-metastore)
   By default, Paimon does not synchronize newly created partitions into Hive metastore. If you want to see a partitioned
   table in Hive and also synchronize newly created partitions into Hive metastore, please set the table property `metastore.partitioned-table` to true.
-- [Retry Lookup Join](https://paimon.apache.org/docs/0.5/how-to/lookup-joins/) support Retry Lookup and Async Retry Lookup.
+- [Retry Lookup Join](https://liyubin117.github.io/paimon-website/docs/0.5/how-to/lookup-joins/) support Retry Lookup and Async Retry Lookup.
 
 ### Spark
 
 Spark is another computing engine that Paimon has in-depth integration and has taken a big step forward at 0.5, including the following features:
 
-- [INSERT OVERWRITE](https://paimon.apache.org/docs/0.5/how-to/writing-tables/#overwriting-the-whole-table) insert ovewrite
+- [INSERT OVERWRITE](https://liyubin117.github.io/paimon-website/docs/0.5/how-to/writing-tables/#overwriting-the-whole-table) insert ovewrite
   partition, Spark’s default overwrite mode is static partition overwrite, you can enable dynamic overwritten too.
 - Partition Management: Support `DROP PARTITION`, `SHOW PARTITIONS`.
 - Supports saving a DataFrame to a paimon location.
@@ -188,7 +188,7 @@ Spark is another computing engine that Paimon has in-depth integration and has t
 
 ## Download
 
-Download the release [here](https://paimon.apache.org/docs/0.5/project/download/).
+Download the release [here](https://liyubin117.github.io/paimon-website/docs/0.5/project/download/).
 
 ## What's next?
 
